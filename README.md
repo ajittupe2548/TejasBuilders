@@ -1,4 +1,4 @@
-## Tejas Builders and Developers Website Clone
+## Tejas Builders and Developers Website
 
 ### Local Development Scripts
 
