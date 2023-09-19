@@ -8,9 +8,7 @@ import Careers from './components/careers'
 import Contactus from './components/contactus'
 import Footer from './components/footer'
 import { BrowserRouter as Router, Route } from "react-router-dom"
-import Completedprojects from './components/completedprojects';
-import Ongoingprojects from './components/ongoingprojects';
-import Futureprojects from './components/futureprojects';
+import ProjectList from './components/ProjectList';
 
 function App() {
   return (
@@ -22,9 +20,9 @@ function App() {
         <Route path='/projects' component={Projects} />
         <Route path='/careers' component={Careers} />
         <Route path='/contactus' component={Contactus} />
-        <Route path='/completedprojects' component={Completedprojects} />
-        <Route path='/ongoingprojects' component={Ongoingprojects} />
-        <Route path='/futureprojects' component={Futureprojects} />
+        <Route path='/completed' component={() => <ProjectList type="completed" />} />
+        <Route path='/ongoing' component={() => <ProjectList type="ongoing" />} />
+        <Route path='/future' component={() => <ProjectList type="future" />} />
         <Footer />
       </Router>
     </div>

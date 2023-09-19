@@ -63,7 +63,7 @@ export default class bodycontent extends Component {
                             </div>
                         </div>
                         <div className="row bottom">
-                            <Link to='/completedprojects' className="col-sm text-dark text-decoration-none">
+                            <Link to='/completed' className="col-sm text-dark text-decoration-none">
 
                                 <div>
                                     <br />
@@ -71,7 +71,7 @@ export default class bodycontent extends Component {
                                     <br />
                                 </div>
                             </Link>
-                            <Link to='/ongoingprojects' className="col-sm text-dark text-decoration-none">
+                            <Link to='/ongoing' className="col-sm text-dark text-decoration-none">
 
                                 <div>
                                     <br />
@@ -79,7 +79,7 @@ export default class bodycontent extends Component {
                                     <br />
                                 </div>
                             </Link>
-                            <Link to='/futureprojects' className="col-sm text-dark text-decoration-none">
+                            <Link to='/future' className="col-sm text-dark text-decoration-none">
 
                                 <div>
                                     <br />
@@ -112,9 +112,9 @@ export default class bodycontent extends Component {
                             </div>
                             <div className="content">
                                 <Link to='/about' className='text-dark text-decoration-none'><ul className="itemslower ">About Us</ul></Link>
-                                <Link to='/completedprojects' className='text-dark text-decoration-none'><ul className="itemslower">Completed Projects</ul></Link>
-                                <Link to='/ongoingprojects' className='text-dark text-decoration-none'><ul className="itemslower">Ongoing Projects</ul></Link>
-                                <Link to='/futureprojects' className='text-dark text-decoration-none'><ul className="itemslower">Future Projects</ul></Link>
+                                <Link to='/completed' className='text-dark text-decoration-none'><ul className="itemslower">Completed Projects</ul></Link>
+                                <Link to='/ongoing' className='text-dark text-decoration-none'><ul className="itemslower">Ongoing Projects</ul></Link>
+                                <Link to='/future' className='text-dark text-decoration-none'><ul className="itemslower">Future Projects</ul></Link>
                                 <Link to='/careers' className='text-dark text-decoration-none'><ul className="itemslower">Careers</ul></Link>
                                 <Link to='contactus' className='text-dark text-decoration-none'><ul className="itemslower">Contact Us</ul></Link>
                             </div>
