@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Container, CardColumns } from 'react-bootstrap';
 import axios from 'axios';
-import Projects from './projects.js'
+import ProjectFilter from './ProjectFilter.js'
 import ProjectCard from './ProjectCard'
 
 export default class ProjectList extends Component {
@@ -35,7 +35,7 @@ export default class ProjectList extends Component {
     render() {
         return (
             <>
-                <Projects />
+                <ProjectFilter />
                 <Container>
                     <CardColumns>
                         {this.projectLists()}

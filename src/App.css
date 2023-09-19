@@ -40,6 +40,19 @@
   }
 }
 
+/* Header */
+.logo {
+  height: 60px;
+  width: 60px;
+  margin: 0;
+  background-color: #fff;
+}
+
+/* Projects */
+.container {
+  margin-top: 20px;
+}
+
 /* Footer */
 .lowe {
   display: block;
