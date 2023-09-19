@@ -12,7 +12,7 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" data-testid="app">
       <Router>
         <Header />
         <Route path='/' exact component={Bodycontent} />

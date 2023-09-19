@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Carousel, Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import aboutImg from '../images/aboutusimg.jpg';
 
 export default class About extends Component {
