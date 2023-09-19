@@ -9,47 +9,47 @@ export default class carouselcomp extends Component {
     render() {
         return (
             <Container className='bg-light p-0'>
-            <Carousel>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src={carousel1}
-                        alt="First slide"
-                    />
-                    <Carousel.Caption>
-                        <h3>Tejas Heritage</h3>
-                        <p>Ulwe, Navi Mumbai 
-                        MAHA RERA NO P52000025147</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src={carousel2}
-                        alt="Second slide"
-                    />
+                <Carousel>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={carousel1}
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
+                            <h3>Tejas Heritage</h3>
+                            <p>Ulwe, Navi Mumbai
+                                MAHA RERA NO P52000025147</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={carousel2}
+                            alt="Second slide"
+                        />
 
-                    <Carousel.Caption>
-                    <h3>Tejas Emerald</h3>
-                        <p>Ulwe, Navi Mumbai 
-                        MAHA RERA NO P52000025147</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src={carousel3}
-                        alt="Third slide"
-                    />
+                        <Carousel.Caption>
+                            <h3>Tejas Emerald</h3>
+                            <p>Ulwe, Navi Mumbai
+                                MAHA RERA NO P52000025147</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={carousel3}
+                            alt="Third slide"
+                        />
 
-                    <Carousel.Caption>
-                    <h3>Tejas Komal</h3>
-                        <p>Ulwe, Navi Mumbai 
-                        MAHA RERA NO P52000025147</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel>
-        </Container>
+                        <Carousel.Caption>
+                            <h3>Tejas Komal</h3>
+                            <p>Ulwe, Navi Mumbai
+                                MAHA RERA NO P52000025147</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                </Carousel>
+            </Container>
         )
     }
 }

@@ -38,7 +38,7 @@ export default class completedprojects extends Component {
 
     projectList() {
         return this.state.project.map(currentproject => {
-            if(currentproject.status=='completed'){
+            if (currentproject.status == 'completed') {
                 return <Project projects={currentproject} />;
             };
         })

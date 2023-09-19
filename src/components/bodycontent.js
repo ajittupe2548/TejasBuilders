@@ -14,7 +14,7 @@ export default class bodycontent extends Component {
     render() {
         return (
             <div>
-                <Carouselcomp/>
+                <Carouselcomp />
                 <Container className='p-0'>
                     <Row className='upperpart'>
                         <Col className='m-3 p-3 border border-secondary bg-white'>
@@ -28,15 +28,15 @@ export default class bodycontent extends Component {
                     </Row>
                     <Row className='upperpart'>
                         <Col className='m-3 p-3 border border-secondary bg-white'>
-                            <img className="show" src={newsimg} alt="not found"/>
+                            <img className="show" src={newsimg} alt="not found" />
                         </Col>
                         <Col className='m-3 p-3 border border-secondary bg-white'>
                             <br />
                             <h2>News / Awards</h2> <br /> <br />
                             <p>The Star Awards is an annual ceremony held in Singapore where the media organisation Mediacorp recognises entertainers under their employment for outstanding performances of the year. Mediacorp first presented in 1994 took place at the Caldecott Broadcast Centre, MediaCorp TV Theatre hosted by Chen Shucheng and Yvette Tsui.  <br /><br />
 
-                        The 25th Star Awards ceremony, honoring the best Singaporean television of 2018 will be held on 14 April 2019, at the Mediacorp Campus, MES Theatre @ Mediacorp. The ceremony will be broadcast live on MeWatch (previously Toggle), Mediacorp Channel 8 and Mediacorp Channel U. The upcoming 26th ceremony, honoring television for 2019 and 2020, was originally rescheduled to the second half of the year but pushed back until 18 April 2021 due to the current COVID-19 pandemic.[1]
-                        </p>
+                                The 25th Star Awards ceremony, honoring the best Singaporean television of 2018 will be held on 14 April 2019, at the Mediacorp Campus, MES Theatre @ Mediacorp. The ceremony will be broadcast live on MeWatch (previously Toggle), Mediacorp Channel 8 and Mediacorp Channel U. The upcoming 26th ceremony, honoring television for 2019 and 2020, was originally rescheduled to the second half of the year but pushed back until 18 April 2021 due to the current COVID-19 pandemic.[1]
+                            </p>
                         </Col>
                     </Row>
                     <div className="cards">
@@ -102,7 +102,7 @@ export default class bodycontent extends Component {
 
                                     <p className='itemslower'>
                                         Tejas Builders & Developers </p>.
-                        </p>
+                                </p>
                             </div>
                         </div>
 
@@ -126,8 +126,8 @@ export default class bodycontent extends Component {
                             </div>
                             <div className="content">
                                 Call us: <br /> 97692 88956 <br /> <br />
-                            Mail us: <br /> sales@tejasinfratech.com <br /> admin@tejasinfratech.com
-                    </div>
+                                Mail us: <br /> sales@tejasinfratech.com <br /> admin@tejasinfratech.com
+                            </div>
                         </div>
 
                         <div className="lower" id="lower4">
@@ -136,11 +136,11 @@ export default class bodycontent extends Component {
                             </div>
                             <div id="content">
                                 <Link>
-                                <FacebookIcon color="primary" className='links text-decoration-none'/></Link>
+                                    <FacebookIcon color="primary" className='links text-decoration-none' /></Link>
                                 <Link>
-                                <TwitterIcon color="primary" className='links text-decoration-none'/></Link>
+                                    <TwitterIcon color="primary" className='links text-decoration-none' /></Link>
                                 <Link>
-                                <InstagramIcon color="primary" className='links text-decoration-none'/></Link>
+                                    <InstagramIcon color="primary" className='links text-decoration-none' /></Link>
                             </div>
                         </div>
                     </div>

@@ -6,7 +6,7 @@ export default class header extends Component {
     render() {
         return (
             <div>
-                <Navbar sticky={0|0} className='navbar sticky-top position-relative' bg="dark" expand="lg">
+                <Navbar sticky={0 | 0} className='navbar sticky-top position-relative' bg="dark" expand="lg">
                     <Image className='logo' src={logo} style={{
                         height: "60px",
                         width: "60px",

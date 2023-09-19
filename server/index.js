@@ -20,6 +20,6 @@ app.use('/completedprojects', completedProjectsRouter);
 app.use('/ongoingprojects', ongoingProjectsRouter);
 app.use('/futureprojects', futureProjectsRouter);
 
-app.listen(port, () =>{
+app.listen(port, () => {
     console.log(`listning on port ${port}`);
 });

@@ -22,9 +22,9 @@ function App() {
         <Route path='/projects' component={Projects} />
         <Route path='/careers' component={Careers} />
         <Route path='/contactus' component={Contactus} />
-        <Route path='/completedprojects' component={Completedprojects}/>
-        <Route path='/ongoingprojects' component={Ongoingprojects}/>
-        <Route path='/futureprojects' component={Futureprojects}/>
+        <Route path='/completedprojects' component={Completedprojects} />
+        <Route path='/ongoingprojects' component={Ongoingprojects} />
+        <Route path='/futureprojects' component={Futureprojects} />
         <Footer />
       </Router>
     </div>

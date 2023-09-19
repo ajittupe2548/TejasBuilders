@@ -40,7 +40,7 @@ export default class futureprojects extends Component {
 
     projectLists() {
         return this.state.project.map(currentproject => {
-            if(currentproject.status=='future'){
+            if (currentproject.status == 'future') {
                 return <Project projects={currentproject} />;
             };
         })

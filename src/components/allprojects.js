@@ -44,13 +44,13 @@ export default class allprojects extends Component {
     render() {
         return (
             <div>
-                <Projects/>
+                <Projects />
                 <Container>
                     <CardColumns>
                         {this.projectList()}
                     </CardColumns>
                 </Container>
             </div>
-            )
+        )
     }
 }

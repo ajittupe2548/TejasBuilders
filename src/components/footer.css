@@ -1,31 +1,37 @@
-.lowe{
+.lowe {
     display: block;
     background-color: rgb(224, 223, 223);
     border: 1px solid black;
     justify-content: center;
     margin: 10px 0;
 }
-.lower{
+
+.lower {
     padding: 10px;
     margin: 10px 0;
 }
-.footerlogo{
+
+.footerlogo {
     height: 10em;
 }
-.heading{
+
+.heading {
     font-size: 15px;
     padding: 10px;
 }
-.content ul{
+
+.content ul {
     padding-right: 30px;
     margin: 10px;
 }
-.itemslower:hover{
+
+.itemslower:hover {
     color: #f8a162;
     cursor: pointer;
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.links{
+
+.links {
     display: flex;
     height: 30px;
     width: 30px;
@@ -33,12 +39,15 @@
     justify-content: center;
     align-items: center;
 }
-.links:hover{
+
+.links:hover {
     color: #230e81;
 }
-#content{
+
+#content {
     display: flex;
 }
-.credit{
+
+.credit {
     padding: 10px;
 }

@@ -19,11 +19,11 @@ export default class contactus extends Component {
             address: '',
             comment: '',
             contacts: [],
-            nameholder:'Your Name',
-            contactholder:'Contact Number',
-            emailholder:'Your Email-Id',
-            addressholder:'Address',
-            commentholder:'Any Comment'
+            nameholder: 'Your Name',
+            contactholder: 'Contact Number',
+            emailholder: 'Your Email-Id',
+            addressholder: 'Address',
+            commentholder: 'Any Comment'
         }
     }
 
@@ -65,21 +65,21 @@ export default class contactus extends Component {
         }
 
         console.log(contact)
-        axios.post('http://localhost:8000/contactus/add',contact)
-        .then(res => console.log(res.data))
-        .catch(err => console.log(err))
+        axios.post('http://localhost:8000/contactus/add', contact)
+            .then(res => console.log(res.data))
+            .catch(err => console.log(err))
 
         this.setState({
             name: '',
             contact: '',
-            email:'',
-            address:'',
-            comment:'',
-            nameholder:'',
-            contactholder:'',
-            emailholder:'',
-            addressholder:'',
-            commentholder:''
+            email: '',
+            address: '',
+            comment: '',
+            nameholder: '',
+            contactholder: '',
+            emailholder: '',
+            addressholder: '',
+            commentholder: ''
         })
     }
 
@@ -100,7 +100,7 @@ export default class contactus extends Component {
                     <Form.Group controlId="exampleForm.ControlTextarea1">
                         <Form.Control as="textarea" rows={2} placeholder={this.state.addressholder} onChange={this.onChangeAddress} />
                     </Form.Group>
-                   
+
                     <Form.Group controlId="exampleForm.ControlTextarea2">
                         <Form.Control as="textarea" rows={2} placeholder={this.state.commentholder} onChange={this.onChangeComment} />
                     </Form.Group>
