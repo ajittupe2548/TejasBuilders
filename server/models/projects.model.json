@@ -1,34 +1,32 @@
-{
-    "Project": [
-        {
-            "name": "Tejas Sparsh",
-            "address": "Plot No. 386, Sector-17, Ulwe, Navi Mumbai",
-            "status": "completed"
-        },
-        {
-            "name": "Tejas Heights",
-            "address": "Plot No. 19, Sector 17, Ulwe, Mumbai",
-            "status": "completed"
-        },
-        {
-            "name": "Tejas Parth",
-            "address": "Plot No. 60, Sector 17, Ulwe, Navi Mumbai",
-            "status": "completed"
-        },
-        {
-            "name": "Tejas Ambience",
-            "address": "Plot No. 183, Sector 23 Ulwe, Navi Mumbai",
-            "status": "ongoing"
-        },
-        {
-            "name": "Tejas Heritage",
-            "address": "Plot No. 376 and 377, Sector 17, Ulwe, Navi Mumbai",
-            "status": "ongoing"
-        },
-        {
-            "name": "Tejas Mauli",
-            "address": "Plot No. 376 and 377, Sector 17, Ulwe, Navi Mumbai",
-            "status": "future"
-        }
-    ]
-}
+[
+    {
+        "name": "Tejas Sparsh",
+        "address": "Plot No. 386, Sector-17, Ulwe, Navi Mumbai",
+        "status": "completed"
+    },
+    {
+        "name": "Tejas Heights",
+        "address": "Plot No. 19, Sector 17, Ulwe, Mumbai",
+        "status": "completed"
+    },
+    {
+        "name": "Tejas Parth",
+        "address": "Plot No. 60, Sector 17, Ulwe, Navi Mumbai",
+        "status": "completed"
+    },
+    {
+        "name": "Tejas Ambience",
+        "address": "Plot No. 183, Sector 23 Ulwe, Navi Mumbai",
+        "status": "ongoing"
+    },
+    {
+        "name": "Tejas Heritage",
+        "address": "Plot No. 376, Sector 17, Ulwe, Navi Mumbai",
+        "status": "ongoing"
+    },
+    {
+        "name": "Tejas Mauli",
+        "address": "Plot No. 377, Sector 17, Ulwe, Navi Mumbai",
+        "status": "future"
+    }
+]

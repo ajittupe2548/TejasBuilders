@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
-import { Button, Navbar, Nav, Form, FormControl, Image, Link } from 'react-bootstrap';
+import { Button, Navbar, Nav, Form, FormControl, Image } from 'react-bootstrap';
 import logo from '../images/logo.svg';
 
 export default class Header extends Component {
     render() {
         return (
             <>
-                <Navbar sticky={0 | 0} className='navbar sticky-top position-relative' bg="dark" expand="lg">
-                    <a href="/">
-                        <Image className='logo' src={logo} />
-                    </a>
+                <Navbar sticky={0 | 0} className='navbar sticky-top' bg="dark" expand="lg">
+                    <Nav.Link href="/">
+                        <Image className='logo' src={logo} alt='Logo' />
+                    </Nav.Link>
                     <Navbar.Toggle aria-controls="basic-navbar-nav " />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto ">
@@ -22,7 +22,7 @@ export default class Header extends Component {
                         </Nav>
                         <Form inline>
                             <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                            <Button variant="outline-warning">Search</Button>
+                            <Button variant="outline-warning" className='search-btn'>Search</Button>
                         </Form>
                     </Navbar.Collapse>
                 </Navbar>

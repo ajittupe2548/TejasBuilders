@@ -5,8 +5,8 @@ import sample from '../images/sample.jpg'
 function ProjectCard({ project }) {
     const { name, address, } = project;
     return (
-        <Card style={{ width: '' }}>
-            <Card.Img variant="top" src={sample} style={{ height: '20rem' }} />
+        <Card style={{}}>
+            <Card.Img variant="top" src={sample} style={{ height: '18rem' }} />
             <Card.Body>
                 <Card.Title>{name}</Card.Title>
                 <Card.Text>

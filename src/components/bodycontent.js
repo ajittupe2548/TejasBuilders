@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Carousel from './ImageCarousel';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Nav } from 'react-bootstrap';
 import content from '../images/content.jpg';
 import newsImg from '../images/new.jpg';
 import logo from '../images/logo.svg';
@@ -22,12 +22,12 @@ export default class BodyContent extends Component {
                             <p>At Tejas Builders & Developers, we give shape to these dreams, nourish and bring them into reality. We are known for an excellent quality, transparency, integrity, reliability and timely completion of the projects. Every project from us is a landmark on its own and stands testimony to the strong bond of trust and confidence of our customers. We have homes for every class of the society. Our customers can choose from varied range of affordable to premium class homes.</p>
                         </Col>
                         <Col className='m-3 p-3 border border-secondary bg-white' >
-                            <img className="show" src={content} alt="not found"></img>
+                            <img className="image" src={content} alt="not found"></img>
                         </Col>
                     </Row>
                     <Row className='upperpart'>
                         <Col className='m-3 p-3 border border-secondary bg-white'>
-                            <img className="show" src={newsImg} alt="not found" />
+                            <img className="image" src={newsImg} alt="not found" />
                         </Col>
                         <Col className='m-3 p-3 border border-secondary bg-white'>
                             <br />
@@ -90,36 +90,36 @@ export default class BodyContent extends Component {
                     </div>
                 </Container>
                 <div className='contain d-flex justify-content-center'>
-                    <div className="d-flex flex-wrap container lowe" id="lower">
-                        <div className="lower" id="lower4">
-                            <div className="lower" id="lower2">
+                    <div className="d-flex flex-wrap container lowe">
+                        <div className="lower">
+                            <div className="lower">
                                 <img className='footerlogo' src={logo} alt="not found" />
                             </div>
                             <div>
                                 <br />
                                 <p>Copyright @ 2017-18. <br />
 
-                                    <p className='itemslower'>
-                                        Tejas Builders & Developers </p>.
+                                    <span className='itemslower'>
+                                        Tejas Builders & Developers </span>.
                                 </p>
                             </div>
                         </div>
 
-                        <div className="lower" id="lower3">
+                        <div className="lower">
                             <div className="heading">
                                 <h4 className="white h-quartely">See more at </h4>
                             </div>
                             <div className="content">
-                                <Link to='/about' className='text-dark text-decoration-none'><ul className="itemslower ">About Us</ul></Link>
-                                <Link to='/completed' className='text-dark text-decoration-none'><ul className="itemslower">Completed Projects</ul></Link>
-                                <Link to='/ongoing' className='text-dark text-decoration-none'><ul className="itemslower">Ongoing Projects</ul></Link>
-                                <Link to='/future' className='text-dark text-decoration-none'><ul className="itemslower">Future Projects</ul></Link>
-                                <Link to='/careers' className='text-dark text-decoration-none'><ul className="itemslower">Careers</ul></Link>
-                                <Link to='contactus' className='text-dark text-decoration-none'><ul className="itemslower">Contact Us</ul></Link>
+                                <Link to='/about' className='text-dark text-decoration-none d-flex p-2 justify-content-center'>About Us</Link>
+                                <Link to='/completed' className='text-dark text-decoration-none d-flex p-2 justify-content-center'>Completed Projects</Link>
+                                <Link to='/ongoing' className='text-dark text-decoration-none d-flex p-2 justify-content-center'>Ongoing Projects</Link>
+                                <Link to='/future' className='text-dark text-decoration-none d-flex p-2 justify-content-center'>Future Projects</Link>
+                                <Link to='/careers' className='text-dark text-decoration-none d-flex p-2 justify-content-center'>Careers</Link>
+                                <Link to='contactus' className='text-dark text-decoration-none d-flex p-2 justify-content-center'>Contact Us</Link>
                             </div>
                         </div>
 
-                        <div className="lower" id="lower1">
+                        <div className="lower">
                             <div className="heading">
                                 <h4 className="white h-quartely">Contact us </h4>
                             </div>
@@ -129,17 +129,17 @@ export default class BodyContent extends Component {
                             </div>
                         </div>
 
-                        <div className="lower" id="lower4">
+                        <div className="lower">
                             <div className="heading">
                                 <h4 className="white h-quartely">Follow us </h4>
                             </div>
                             <div id="content">
-                                <Link>
-                                    <FacebookIcon color="primary" className='links text-decoration-none' /></Link>
-                                <Link>
-                                    <TwitterIcon color="primary" className='links text-decoration-none' /></Link>
-                                <Link>
-                                    <InstagramIcon color="primary" className='links text-decoration-none' /></Link>
+                                <Nav.Link className="social-media-link" href="https://www.facebook.com/TejasBuildersandDevelopers/" target='_blank'>
+                                    <FacebookIcon color="primary" className='links text-decoration-none' /></Nav.Link>
+                                <Nav.Link className="social-media-link" href="https://www.facebook.com/TejasBuildersandDevelopers/" target='_blank'>
+                                    <TwitterIcon color="primary" className='links text-decoration-none' /></Nav.Link>
+                                <Nav.Link className="social-media-link" href="https://www.facebook.com/TejasBuildersandDevelopers/" target='_blank'>
+                                    <InstagramIcon color="primary" className='links text-decoration-none' /></Nav.Link>
                             </div>
                         </div>
                     </div>

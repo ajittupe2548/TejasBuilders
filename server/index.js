@@ -8,18 +8,12 @@ const port = 8000;
 app.use(cors());
 app.use(express.json());
 
-const contactusRouter = require('./routes/contactus');
-const projectsRouter = require('./routes/projects');
-const completedProjectsRouter = require('./routes/completed')
-const ongoingProjectsRouter = require('./routes/ongoing')
-const futureProjectsRouter = require('./routes/future')
+const contactUs = require('./routes/ContactUs');
+const projects = require('./routes/Projects');
 
-app.use('/contactus', contactusRouter);
-app.use('/projects', projectsRouter);
-app.use('/completed', completedProjectsRouter);
-app.use('/ongoing', ongoingProjectsRouter);
-app.use('/future', futureProjectsRouter);
+app.use('/contactus', contactUs);
+app.use('/projects', projects);
 
 app.listen(port, () => {
-    console.log(`listning on port ${port}`);
+    console.log(`Listning on port ${port}`);
 });

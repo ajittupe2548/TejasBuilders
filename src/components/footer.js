@@ -4,7 +4,7 @@ export default class Footer extends Component {
     render() {
         return (
             <div className='credit bg-dark text-white' >
-                <h5>Designed by <span className='itemslower'> AjIT and Team</span></h5>
+                Copyright @ 2023 - 24 All Rights Reseved.
             </div>
         )
     }

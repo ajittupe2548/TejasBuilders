@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
-import { Container, CardColumns } from 'react-bootstrap';
+import { Container, CardColumns, Button } from 'react-bootstrap';
 import axios from 'axios';
-import ProjectFilter from './ProjectFilter'
-import ProjectCard from './ProjectCard'
+import ProjectCard from './ProjectCard';
 
 export default class AllProjects extends Component {
     constructor(props) {
@@ -11,6 +10,8 @@ export default class AllProjects extends Component {
         this.state = {
             project: [],
         }
+
+        this.allProjects = null;
     }
     async componentDidMount() {
         await axios.get("http://localhost:8000/projects/")
@@ -18,23 +19,38 @@ export default class AllProjects extends Component {
                 this.setState({
                     project: response.data
                 })
+                this.allProjects = response.data;
             })
             .catch(err => {
                 console.log('Erros is:', err)
             })
     }
-    projectList() {
-        return this.state.project.map(currentproject => {
-            return <ProjectCard project={currentproject} />;
+
+    handleFilterClick = (type) => {
+        this.setState({
+            project: this.allProjects.filter(item => item.status === type)
         })
     }
+
     render() {
         return (
             <>
-                <ProjectFilter />
+                <h1>Projects</h1>
+                <div className='filter-container'>
+
+                    <Button variant="warning" onClick={() => this.setState({ project: this.allProjects })}>All Projects</Button>{' '}
+                    <Button variant="primary" onClick={() => this.handleFilterClick('completed')}>Completed Projects</Button>{' '}
+                    <Button variant="secondary" onClick={() => this.handleFilterClick('ongoing')}>Ongoing Projects</Button>{' '}
+                    <Button variant="success" onClick={() => this.handleFilterClick('future')}>Future Projects</Button>{' '}
+
+                </div>
                 <Container>
                     <CardColumns>
-                        {this.projectList()}
+                        {
+                            this.state.project.map((project, i) => {
+                                return <ProjectCard key={i} project={project} />;
+                            })
+                        }
                     </CardColumns>
                 </Container>
             </>

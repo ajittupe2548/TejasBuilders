@@ -55,7 +55,8 @@ export default class ContactUs extends Component {
     }
 
     onSubmit(e) {
-        // e.preventDefault();
+        e.preventDefault();
+
         const contact = {
             name: this.state.name,
             contact: this.state.contact,
@@ -64,23 +65,17 @@ export default class ContactUs extends Component {
             comment: this.state.comment
         }
 
-        console.log(contact)
-        axios.post('http://localhost:8000/contactus/add', contact)
-            .then(res => console.log(res.data))
-            .catch(err => console.log(err))
-
         this.setState({
             name: '',
             contact: '',
             email: '',
             address: '',
             comment: '',
-            nameholder: '',
-            contactholder: '',
-            emailholder: '',
-            addressholder: '',
-            commentholder: ''
         })
+
+        axios.post('http://localhost:8000/contactus/add', contact)
+            .then(res => console.log(res.data))
+            .catch(err => console.log(err))
     }
 
     render() {
@@ -89,20 +84,20 @@ export default class ContactUs extends Component {
                 <h1> Enquiry Form</h1>
                 <Form onSubmit={this.onSubmit}>
                     <Form.Group controlId="exampleForm.ControlInput1">
-                        <Form.Control type="text" placeholder={this.state.nameholder} onChange={this.onChangeName} />
+                        <Form.Control required type="text" placeholder={this.state.nameholder} onChange={this.onChangeName} value={this.state.name} />
                     </Form.Group>
                     <Form.Group controlId="exampleForm.ControlInput1">
-                        <Form.Control type="text" placeholder={this.state.contactholder} onChange={this.onChangeContact} />
+                        <Form.Control required type="text" placeholder={this.state.contactholder} onChange={this.onChangeContact} value={this.state.contact} />
                     </Form.Group>
                     <Form.Group controlId="exampleForm.ControlInput1">
-                        <Form.Control type="email" placeholder={this.state.emailholder} onChange={this.onChangeEmail} />
+                        <Form.Control required type="email" placeholder={this.state.emailholder} onChange={this.onChangeEmail} value={this.state.email} />
                     </Form.Group>
                     <Form.Group controlId="exampleForm.ControlTextarea1">
-                        <Form.Control as="textarea" rows={2} placeholder={this.state.addressholder} onChange={this.onChangeAddress} />
+                        <Form.Control required as="textarea" rows={2} placeholder={this.state.addressholder} onChange={this.onChangeAddress} value={this.state.address} />
                     </Form.Group>
 
                     <Form.Group controlId="exampleForm.ControlTextarea2">
-                        <Form.Control as="textarea" rows={2} placeholder={this.state.commentholder} onChange={this.onChangeComment} />
+                        <Form.Control as="textarea" rows={2} placeholder={this.state.commentholder} onChange={this.onChangeComment} value={this.state.comment} />
                     </Form.Group>
                     <Button type="submit" variant='secondary'>Submit form</Button>
                 </Form >
