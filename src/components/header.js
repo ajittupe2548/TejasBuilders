@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Button, Navbar, Nav, Form, FormControl, Image } from 'react-bootstrap';
 import logo from '../images/logo.svg';
 
-export default class header extends Component {
+export default class Header extends Component {
     render() {
         return (
             <div>

@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import './body.css';
 import { Carousel, Container } from 'react-bootstrap';
 import carousel1 from '../images/carousel1.jpg';
 import carousel2 from '../images/carousel2.jpg';
 import carousel3 from '../images/carousel3.jpg';
 
-export default class carouselcomp extends Component {
+export default class ImageCarousel extends Component {
     render() {
         return (
             <Container className='bg-light p-0'>

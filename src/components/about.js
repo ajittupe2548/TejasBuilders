@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Carousel, Container, Row, Col } from 'react-bootstrap';
-import aboutimg from '../images/aboutusimg.jpg';
+import aboutImg from '../images/aboutusimg.jpg';
 
-export default class about extends Component {
+export default class About extends Component {
     render() {
         return (
             <div>
@@ -10,7 +10,7 @@ export default class about extends Component {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src={aboutimg}
+                            src={aboutImg}
                             alt="First slide"
                         />
                         <Carousel.Caption>

@@ -1,20 +1,19 @@
 import React, { Component } from 'react';
-import Carouselcomp from '../components/carouselcomp';
+import Carousel from './ImageCarousel';
 import { Container, Row, Col } from 'react-bootstrap';
 import content from '../images/content.jpg';
-import newsimg from '../images/new.jpg';
+import newsImg from '../images/new.jpg';
 import logo from '../images/logo.svg';
 import { Link } from 'react-router-dom';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
-import './footer.css';
 
-export default class bodycontent extends Component {
+export default class BodyContent extends Component {
     render() {
         return (
             <div>
-                <Carouselcomp />
+                <Carousel />
                 <Container className='p-0'>
                     <Row className='upperpart'>
                         <Col className='m-3 p-3 border border-secondary bg-white'>
@@ -28,7 +27,7 @@ export default class bodycontent extends Component {
                     </Row>
                     <Row className='upperpart'>
                         <Col className='m-3 p-3 border border-secondary bg-white'>
-                            <img className="show" src={newsimg} alt="not found" />
+                            <img className="show" src={newsImg} alt="not found" />
                         </Col>
                         <Col className='m-3 p-3 border border-secondary bg-white'>
                             <br />

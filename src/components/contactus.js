@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Form, Button } from "react-bootstrap";
 import axios from 'axios';
 
-export default class contactus extends Component {
+export default class ContactUs extends Component {
     constructor(props) {
         super(props);
         this.onChangeName = this.onChangeName.bind(this);

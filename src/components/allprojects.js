@@ -4,7 +4,7 @@ import axios from 'axios';
 import Projects from './projects'
 import ProjectCard from './ProjectCard'
 
-export default class allprojects extends Component {
+export default class AllProjects extends Component {
     constructor(props) {
         super(props);
 
@@ -25,7 +25,7 @@ export default class allprojects extends Component {
     }
     projectList() {
         return this.state.project.map(currentproject => {
-            return <ProjectCard projects={currentproject} />;
+            return <ProjectCard project={currentproject} />;
         })
     }
     render() {
